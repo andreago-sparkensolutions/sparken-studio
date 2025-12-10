@@ -210,8 +210,8 @@ export default function Home() {
           >
             {[
               { stat: "34%", label: "Average Increase", sublabel: "In Patient Inquiries*" },
-              { stat: "$35k", label: "Typical Investment", sublabel: "Premium Results" },
-              { stat: "6-8", label: "Clients Per Year", sublabel: "Exclusive Attention" },
+              { stat: "$28k", label: "Typical Investment", sublabel: "Premium Results" },
+              { stat: "8-10", label: "Clients Per Year", sublabel: "Boutique Attention" },
             ].map((item, i) => (
               <div
                 key={i}
@@ -276,7 +276,7 @@ export default function Home() {
               {
                 icon: LineChart,
                 title: "Measurably Effective",
-                description: "Our clients see 30-50% increases in qualified inquiries within 6 months (n=12, 2022-2024 cohort). Data-driven transformation.",
+                description: "Our clients see 30-50% increases in qualified inquiries within 6 months. Small team, big results through strategic focus.",
               },
             ].map((card, i) => (
               <motion.div
@@ -406,68 +406,65 @@ export default function Home() {
               Choose Your <span className="bg-gradient-to-r from-amber-400 to-amber-600 bg-clip-text text-transparent font-light">Transformation</span>
             </h2>
             <p className="text-xl font-extralight text-zinc-400 mb-4">
-              Custom branding, bespoke website development, behavioral research integration
+              Boutique team. Custom branding. Hand-coded websites. Research-backed decisions.
             </p>
             <p className="text-base font-extralight text-zinc-500 max-w-3xl mx-auto">
-              Every brand is custom-designed from scratch. Every website is custom-coded (no templates). 
-              Every decision is backed by peer-reviewed behavioral research.
+              Two specialists working exclusively on your brand: one focused on strategic identity design, 
+              one focused on custom web development. No templates. No outsourcing. Just focused, research-driven work.
             </p>
           </motion.div>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
             {[
               {
-                name: "Digital Presence",
-                price: "$24,000",
-                duration: "6-7 weeks",
+                name: "Foundation",
+                price: "$18,000",
+                duration: "5-6 weeks",
                 featured: false,
-                description: "Foundation-level brand identity with psychology-backed design",
+                description: "Essential brand identity + custom website for practices ready to elevate",
                 features: [
-                  "Behavioral research analysis of your target patient demographic",
-                  "Custom brand strategy rooted in neuroscience principles",
-                  "Bespoke logo and visual identity system (not templates)",
-                  "Custom-coded 5-page website with conversion optimization",
-                  "Mobile-first responsive design (tested across 12+ devices)",
-                  "Strategic color selection backed by emotional response studies",
-                  "Typography optimized for readability & trust perception",
-                  "Basic SEO foundation & performance optimization",
+                  "Research-backed brand strategy session",
+                  "Custom logo + visual identity system (colors, fonts, style guide)",
+                  "Psychology-informed color palette selection",
+                  "Custom-coded 5-page website (Home, About, Services, Gallery, Contact)",
+                  "Mobile-responsive design",
+                  "Basic SEO optimization",
+                  "2 rounds of revisions",
                 ],
               },
               {
-                name: "Growth Brand",
-                price: "$35,000",
-                duration: "8-10 weeks",
+                name: "Signature",
+                price: "$28,000",
+                duration: "7-9 weeks",
                 featured: true,
                 badge: "Most Popular",
-                description: "Complete brand transformation with advanced behavioral design",
+                description: "Complete brand + conversion-optimized website with behavioral design",
                 features: [
-                  "Everything in Digital Presence, plus:",
-                  "Deep behavioral psychology audit (anxiety triggers, trust signals)",
-                  "Custom 10-page website with advanced CRO & A/B testing framework",
-                  "Patient journey mapping using decision science",
-                  "Persuasion architecture (Cialdini's 7 principles applied)",
-                  "Custom animations & micro-interactions (dopamine optimization)",
-                  "Advanced analytics setup with conversion tracking",
-                  "Competitor psychological analysis & differentiation strategy",
-                  "3 months post-launch optimization & consultation",
+                  "Everything in Foundation, plus:",
+                  "Behavioral psychology audit of patient journey",
+                  "Custom-coded 8-page website with conversion optimization",
+                  "Strategic copywriting (persuasion principles applied)",
+                  "Patient testimonial strategy & placement optimization",
+                  "Custom animations & hover effects",
+                  "Analytics setup + goal tracking",
+                  "30 days post-launch support",
                 ],
               },
               {
-                name: "Authority Brand",
-                price: "$52,000",
-                duration: "10-14 weeks",
+                name: "Authority",
+                price: "$42,000",
+                duration: "10-12 weeks",
                 featured: false,
-                description: "Elite positioning with comprehensive research & bespoke development",
+                description: "Premium positioning with advanced website features & ongoing optimization",
                 features: [
-                  "Everything in Growth Brand, plus:",
-                  "Comprehensive market research study (qualitative & quantitative)",
-                  "Brand perception study with target demographic (n=50+ respondents)",
-                  "Custom photography art direction & styling guide",
-                  "Neuromarketing-optimized copywriting (scarcity, authority, social proof)",
-                  "Advanced conversion optimization (heatmaps, session recordings, funnel analysis)",
-                  "Custom interactive features & booking system integration",
-                  "Premium hosting & security (HIPAA-compliant infrastructure)",
-                  "6 months strategic consulting with quarterly optimization",
+                  "Everything in Signature, plus:",
+                  "Comprehensive competitor analysis",
+                  "Photography art direction guide",
+                  "Custom 12+ page website with advanced features",
+                  "Booking system integration",
+                  "Advanced conversion optimization & A/B testing setup",
+                  "Email marketing template design",
+                  "3 months post-launch consulting (monthly strategy calls)",
                 ],
               },
             ].map((tier, i) => (
