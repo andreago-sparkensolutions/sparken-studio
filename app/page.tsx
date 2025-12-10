@@ -405,8 +405,12 @@ export default function Home() {
             <h2 className="text-5xl md:text-6xl font-extralight mb-6">
               Choose Your <span className="bg-gradient-to-r from-amber-400 to-amber-600 bg-clip-text text-transparent font-light">Transformation</span>
             </h2>
-            <p className="text-xl font-extralight text-zinc-400">
-              Bespoke brand design backed by behavioral science
+            <p className="text-xl font-extralight text-zinc-400 mb-4">
+              Custom branding, bespoke website development, behavioral research integration
+            </p>
+            <p className="text-base font-extralight text-zinc-500 max-w-3xl mx-auto">
+              Every brand is custom-designed from scratch. Every website is custom-coded (no templates). 
+              Every decision is backed by peer-reviewed behavioral research.
             </p>
           </motion.div>
 
@@ -417,12 +421,16 @@ export default function Home() {
                 price: "$24,000",
                 duration: "6-7 weeks",
                 featured: false,
+                description: "Foundation-level brand identity with psychology-backed design",
                 features: [
-                  "Research-driven brand strategy",
-                  "Logo and visual identity",
-                  "5-page website",
-                  "Mobile-optimized design",
-                  "Basic SEO foundation",
+                  "Behavioral research analysis of your target patient demographic",
+                  "Custom brand strategy rooted in neuroscience principles",
+                  "Bespoke logo and visual identity system (not templates)",
+                  "Custom-coded 5-page website with conversion optimization",
+                  "Mobile-first responsive design (tested across 12+ devices)",
+                  "Strategic color selection backed by emotional response studies",
+                  "Typography optimized for readability & trust perception",
+                  "Basic SEO foundation & performance optimization",
                 ],
               },
               {
@@ -431,13 +439,17 @@ export default function Home() {
                 duration: "8-10 weeks",
                 featured: true,
                 badge: "Most Popular",
+                description: "Complete brand transformation with advanced behavioral design",
                 features: [
-                  "Everything in Digital Presence",
-                  "Behavioral psychology audit",
-                  "10-page website with CRO",
-                  "Patient journey mapping",
-                  "Advanced analytics setup",
-                  "3 months post-launch support",
+                  "Everything in Digital Presence, plus:",
+                  "Deep behavioral psychology audit (anxiety triggers, trust signals)",
+                  "Custom 10-page website with advanced CRO & A/B testing framework",
+                  "Patient journey mapping using decision science",
+                  "Persuasion architecture (Cialdini's 7 principles applied)",
+                  "Custom animations & micro-interactions (dopamine optimization)",
+                  "Advanced analytics setup with conversion tracking",
+                  "Competitor psychological analysis & differentiation strategy",
+                  "3 months post-launch optimization & consultation",
                 ],
               },
               {
@@ -445,13 +457,17 @@ export default function Home() {
                 price: "$52,000",
                 duration: "10-14 weeks",
                 featured: false,
+                description: "Elite positioning with comprehensive research & bespoke development",
                 features: [
-                  "Everything in Growth Brand",
-                  "Comprehensive market research",
-                  "Custom photography direction",
-                  "Premium copywriting",
-                  "Advanced conversion optimization",
-                  "6 months strategic consulting",
+                  "Everything in Growth Brand, plus:",
+                  "Comprehensive market research study (qualitative & quantitative)",
+                  "Brand perception study with target demographic (n=50+ respondents)",
+                  "Custom photography art direction & styling guide",
+                  "Neuromarketing-optimized copywriting (scarcity, authority, social proof)",
+                  "Advanced conversion optimization (heatmaps, session recordings, funnel analysis)",
+                  "Custom interactive features & booking system integration",
+                  "Premium hosting & security (HIPAA-compliant infrastructure)",
+                  "6 months strategic consulting with quarterly optimization",
                 ],
               },
             ].map((tier, i) => (
@@ -475,10 +491,13 @@ export default function Home() {
 
                 <div className="mb-8">
                   <h3 className="text-2xl font-light mb-2">{tier.name}</h3>
-                  <div className="flex items-baseline gap-2 mb-2">
+                  <div className="flex items-baseline gap-2 mb-3">
                     <span className="text-5xl font-extralight">{tier.price}</span>
                   </div>
-                  <p className="text-sm font-extralight text-zinc-500">{tier.duration}</p>
+                  <p className="text-sm font-extralight text-zinc-500 mb-3">{tier.duration}</p>
+                  <p className="text-sm font-extralight text-zinc-400 leading-relaxed">
+                    {tier.description}
+                  </p>
                 </div>
 
                 <ul className="space-y-4 mb-10">
